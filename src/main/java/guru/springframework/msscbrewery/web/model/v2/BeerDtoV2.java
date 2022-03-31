@@ -5,11 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
-/**
- * Created by jt on 2019-04-23.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,4 +17,6 @@ public class BeerDtoV2 {
     private String beerName;
     private BeerStyleEnum beerStyle;
     private Long upc;
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUpdateDate;
 }
